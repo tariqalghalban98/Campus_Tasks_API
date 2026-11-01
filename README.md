@@ -1,18 +1,19 @@
-# Campus Tasks API
+# Campus Tasks API - Age Calculator
 
-This is a simple Java API created for Assignment #2.
-The goal is to show that the project can run perfectly inside Docker.
-It has a main page, a status page, and an about page.
+A simple Node.js web application built for OS Lab Assignment #2. It calculates a user's age based on their birth year.
 
-## How to build and run
+## Tech Stack
 
-1. Build the image: docker build -t campus-api .
-2. Run the container: docker run -d -p 8080:8080 --name my-java-app campus-api
+- Node.js
+- Docker
+- Docker Compose
 
-## How to test
+## How to Build and Run using Docker
 
-Open your browser and check:
+1. Clone this repository.
+2. Run: docker-compose up -d --build
+3. Open your browser and go to: http://localhost:8080
 
-- http://localhost:8080/ (Main page)
-- http://localhost:8080/status (JSON status)
-- http://localhost:8080/about (Info page)
+## How to Stop
+
+Run: docker-compose down
